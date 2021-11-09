@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sedat Ünal </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul class="ul">
+                <li class="li"><a class="a" href="index.html">Ana sayfa</a></li>
+                <li class="li"><a class="a" href="egitim.html">Eğitim Bilgileri</a></li>
+                <li class="li"><a class="a" href="hobiler.html">Hobiler</a></li>
+                <li class="li"><a class="a" href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="card">
+                <h3 class="egitimTitle">Okul Bilgilerim</h3>
+                <hr>
+                <ul class="egitimList">
+                    <li class="egitimItem">
+                        <a class="egitimLink" href="https://www.nisantasi.edu.tr/index.html">
+                            Nişantaşı Üniversitesi | 
+                        </a>
+                    </li>
+                    <li class="egitimItem">
+                        <a class="egitimLink" href="http://mmf.nisantasi.edu.tr/">
+                            &nbsp;Mühendislik Mimarlık Fakültesi |
+                        </a>
+                    </li>
+                    <li class="egitimItem">
+                        <a class="egitimLink" href="http://mmf.nisantasi.edu.tr/Bolumler/bilgisayar-muhendisligi.html">
+                            &nbsp;Bilgisayar Mühendisliği 
+                        </a>
+                    </li>
+                </ul>
+                </br>
+                <hr>
+                <h3 class="egitimTitle">Bilgisayar Mühendisliği Ders Planı - AKTS Bilgileri</h3>
+                <div class="dersler">
+                    <ul class="listMain">
+                        <li class="list">
+                            <a href="#" onclick="showOneLessons()">
+                                1. Yıl Dersleri
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" onclick="showTwoLessons()">
+                                2. Yıl Dersleri
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" onclick="showThreeLessons()">
+                                3. Yıl Dersleri
+                            </a>
+                        </li>
+                        <li class="list" id="4">
+                            <a href="#" onclick="showFourLessons()">
+                                4. Yıl Dersleri
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </br>
+                </br>
+                <div id="1derslerDiv" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>EATA101</td>
+                                <td>Atatürk İlkeleri ve İnkılap Tarihi 1</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>EBLG105</td>
+                                <td>Bilgisayar Mühendisliğine Giriş</td>
+                                <td rowspan="2">3</td>
+                                <td rowspan="2">5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>EBLG103</td>
+                                <td>Matematik 1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>EBLG101</td>
+                                <td>Fizik 1</td>
+                                <td>3</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>11</td>
+                                <td>18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>EATA201</td>
+                                <td>Atatürk İlkeleri ve İnkılap Tarihi 2</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>EBLG205</td>
+                                <td>Bilgisayar Programlama</td>
+                                <td rowspan="2">3</td>
+                                <td rowspan="2">5</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>EBLG203</td>
+                                <td>Matematik 2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>EBLG201</td>
+                                <td>Fizik 2</td>
+                                <td>3</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>11</td>
+                                <td>18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="2derslerDiv" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td>EBLG205</td>
+                                <td>Nesne Yönetimli Programlama</td>
+                                <td>3</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>EBLG201</td>
+                                <td>Diferansiyel Denklemler</td>
+                                <td rowspan="2">4</td>
+                                <td rowspan="2">7</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>EBLG203</td>
+                                <td>Lineer Cebir</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>11</td>
+                                <td>19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>EBLG206</td>
+                                <td>Veri Yapıları ve Algoritmalar</td>
+                                <td rowspan="2">3</td>
+                                <td rowspan="2">6</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>EBLG204</td>
+                                <td>Genel Kimya</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>EBLG202</td>
+                                <td>Ayrık Matematik</td>
+                                <td>3</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>9</td>
+                                <td>19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="3derslerDiv" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td>EBLG301</td>
+                                <td>İşletim Sistemleri</td>
+                                <td rowspan="3">3</td>
+                                <td rowspan="3">5</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>EBLG303</td>
+                                <td>Olasılık ve İstatistik</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>EBLG309</td>
+                                <td>Web Programlama</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>9</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6</td>
+                                <td>EBLG302</td>
+                                <td>Mikroişlemciler</td>
+                                <td rowspan="3">3</td>
+                                <td rowspan="3">5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>EBLG304</td>
+                                <td>Programlama Dilleri</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>EBLG306</td>
+                                <td>Ağlar</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>9</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="4derslerDiv" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7</td>
+                                <td>EBLG401</td>
+                                <td>Paralel Programlama</td>
+                                <td rowspan="2">3</td>
+                                <td rowspan="2">5</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>EBLG411</td>
+                                <td>Ağ Protokolleri</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>EBLG403</td>
+                                <td>Siber Güvenlik</td>
+                                <td>3</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>9</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dönemi</th>
+                                <th>Ders Kodu</th>
+                                <th>Ders Adı</th>
+                                <th>Kredi</th>
+                                <th>AKTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8</td>
+                                <td>EBLG404</td>
+                                <td>Bir Firmada Kadrolu Çalışmak</td>
+                                <td>12</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">Toplam</td>
+                                <td>12</td>
+                                <td>30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a class="a" href="http://www.sedatunal.net">2020 	&copy; Sedat Ünal</a></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function showOneLessons() {
+            var a = document.getElementById("1derslerDiv");
+            var b = document.getElementById("2derslerDiv");
+            var c = document.getElementById("3derslerDiv");
+            var d = document.getElementById("4derslerDiv");
+            var goster = "block";
+            var gizle = "none";
+
+            // a zaten gizliyse
+            if (a.style.display == gizle) {
+                // b şu anda gösteriliyorsa
+                if (b.style.display == goster) {
+                    b.style.display = gizle;
+                    a.style.display = goster;
+                } else {
+                    // c şu anda gösteriliyorsa
+                    if (c.style.display == goster) {
+                        c.style.display = gizle;
+                        a.style.display = goster;
+                    } else {
+                        // d şu anda gösteriliyorsa
+                        if (d.style.display == goster) {
+                            d.style.display = gizle;
+                            a.style.display = goster;
+                        } else {
+                            a.style.display = goster;
+                        }
+                    }
+                    // halihazırda gösterilen yoksa
+                    a.style.display = goster;
+                }
+            } else {
+                // a gosteriliyorsa gizle
+                a.style.display = gizle;
+            }
+        }
+
+        function showTwoLessons() {
+            var a = document.getElementById("1derslerDiv");
+            var b = document.getElementById("2derslerDiv");
+            var c = document.getElementById("3derslerDiv");
+            var d = document.getElementById("4derslerDiv");
+            var goster = "block";
+            var gizle = "none";
+
+            // b zaten gizliyse
+            if (b.style.display == gizle) {
+                // a şu anda gösteriliyorsa
+                if (a.style.display == goster) {
+                    a.style.display = gizle;
+                    b.style.display = goster;
+                } else {
+                    // c şu anda gösteriliyorsa
+                    if (c.style.display == goster) {
+                        c.style.display = gizle;
+                        b.style.display = goster;
+                    } else {
+                        // d şu anda gösteriliyorsa
+                        if (d.style.display == goster) {
+                            d.style.display = gizle;
+                            b.style.display = goster;
+                        } else {
+                            b.style.display = goster;
+                        }
+                    }
+                    // halihazırda gösterilen yoksa
+                    b.style.display = goster;
+                }
+            } else {
+                // b gosteriliyorsa gizle
+                b.style.display = gizle;
+            }
+        }
+
+        function showThreeLessons() {
+            var a = document.getElementById("1derslerDiv");
+            var b = document.getElementById("2derslerDiv");
+            var c = document.getElementById("3derslerDiv");
+            var d = document.getElementById("4derslerDiv");
+            var goster = "block";
+            var gizle = "none";
+
+            // c zaten gizliyse
+            if (c.style.display == gizle) {
+                // a şu anda gösteriliyorsa
+                if (a.style.display == goster) {
+                    a.style.display = gizle;
+                    c.style.display = goster;
+                } else {
+                    // b şu anda gösteriliyorsa
+                    if (b.style.display == goster) {
+                        b.style.display = gizle;
+                        c.style.display = goster;
+                    } else {
+                        // d şu anda gösteriliyorsa
+                        if (d.style.display == goster) {
+                            d.style.display = gizle;
+                            c.style.display = goster;
+                        } else {
+                            c.style.display = goster;
+                        }
+                    }
+                    // halihazırda gösterilen yoksa
+                    c.style.display = goster;
+                }
+            } else {
+                // c gosteriliyorsa gizle
+                c.style.display = gizle;
+            }
+        }
+
+        function showFourLessons() {
+            var a = document.getElementById("1derslerDiv");
+            var b = document.getElementById("2derslerDiv");
+            var c = document.getElementById("3derslerDiv");
+            var d = document.getElementById("4derslerDiv");
+            var goster = "block";
+            var gizle = "none";
+
+            // d zaten gizliyse
+            if (d.style.display == gizle) {
+                // a şu anda gösteriliyorsa
+                if (a.style.display == goster) {
+                    a.style.display = gizle;
+                    d.style.display = goster;
+                } else {
+                    // b şu anda gösteriliyorsa
+                    if (b.style.display == goster) {
+                        b.style.display = gizle;
+                        d.style.display = goster;
+                    } else {
+                        // c şu anda gösteriliyorsa
+                        if (c.style.display == goster) {
+                            c.style.display = gizle;
+                            d.style.display = goster;
+                        } else {
+                            d.style.display = goster;
+                        }
+                    }
+                    // halihazırda gösterilen yoksa
+                    d.style.display = goster;
+                }
+            } else {
+                // d gosteriliyorsa gizle
+                d.style.display = gizle;
+            }
+        }
+    </script>
+</body>
+
+</html>
