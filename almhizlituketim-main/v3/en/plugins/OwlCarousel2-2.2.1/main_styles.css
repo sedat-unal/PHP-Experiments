@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+	3.1 Logo
+	3.2 Main Navigation
+	3.3 Weather and Search
+	3.4 Hamburger
+4. Menu
+5. Home
+	5.1 Home Slider
+6. Main Content
+7. Section Panel
+8. Cards
+9. Videos
+10. Load More Button
+11. Sidebar
+12. Footer
+
+
+******************************/
+
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+div {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.form-control {
+    color: #db5246;
+}
+
+section {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.trans_200 {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.trans_300 {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.trans_400 {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.trans_500 {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.fill_height {
+    height: 100%;
+}
+
+.super_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.prlx_parent {
+    overflow: hidden;
+}
+
+.prlx {
+    height: 130% !important;
+}
+
+.nopadding {
+    padding: 0px !important;
+}
+
+
+/*********************************
+5. Home
+*********************************/
+
+.home {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*********************************
+5.1 Home Slider
+*********************************/
+
+.home_slider_container {
+    width: 100%;
+    height: 100%;
+}
+
+.home_slider {}
+
+.home_slider_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home_slider_content_container {
+    position: absolute;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+}
+
+
+/* Slider başlık */
+
+.home_slider_item_title a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.27;
+}
+
+.home_slider_item_link {
+    margin-top: 21px;
+}
+
+.custom_nav_container {
+    z-index: 10;
+}
+
+.carosel_baslik {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 20px;
+    font-family: sans-serif;
+    font-size: 15em;
+    text-shadow: 0 5px 15px #000;
+    border-top: none;
+    border: 7px solid #fff;
+    cursor: pointer;
+}
+
+.custom_dots {
+    display: inline-block;
+    height: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.custom_dot {
+    display: inline-block;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.custom_dot span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(164, 0, 0, 35);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.custom_dot.active span {
+    background: rgba(128, 0, 0);
+}
+
+.custom_dot:hover span {
+    background: rgba(128, 0, 0);
+}
+
+.custom_prev,
+.custom_next {
+    cursor: pointer;
+}
+
+.custom_prev,
+.custom_next {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.custom_prev svg polyline,
+.custom_next svg polyline {
+    fill: rgba(128, 0, 0);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.custom_prev:hover svg polyline,
+.custom_next:hover svg polyline {
+    fill: rgba(128, 0, 0);
+}

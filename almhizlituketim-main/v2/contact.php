@@ -4,7 +4,7 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-5 mb-3">İletişim
+      <h1 class="mt-4 mb-3">İletişim
         <small>Ulaşım</small>
       </h1>
 
@@ -39,7 +39,7 @@
             </a>
           </p>
           <p>
-            Pazartesi - Cuma: 8:30/18:00<br>Cumartesi: 8:30/15:00
+            Pazartesi - Cuma: 8:30/19:00<br>Cumartesi: 8:30/15:00
           </p>
         </div>
       </div>
